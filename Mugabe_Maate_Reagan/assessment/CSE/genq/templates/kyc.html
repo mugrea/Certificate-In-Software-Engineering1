@@ -1,0 +1,49 @@
+{% block content%}
+{% load static %}
+<!DOCTYPE html>
+<body>
+    
+    <title>GENQ  KYC  FORM</title>
+    <link rel="stylesheet" href="{% static 'css/kyc.css' %}">
+    <h1>GENQ  KYC  FORM</h1>
+    <form action="{% url 'kyc_details' %}" id="reg_form" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="container">
+    <fieldset>
+         <legend><strong>BIO DATA</strong>   </legend>
+    
+          
+          
+          <input placeholder= "Fist Name" type="text" name="fname" maxlength="25" />
+          <input placeholder= "Last Name" type="text" name="lname" size="15" maxlength="20" />
+          <input placeholder= "Date Of  Birth" type="date" name="DOB" />
+          <input placeholder= "gender" type="text" name="gender" size="15" maxlength="20" />
+    </fieldset>
+        <fieldset>
+            <legend><strong>LOCATION</strong>   </legend>
+            <select name="LOCATION" placeholder="Country">
+                <option value="Uganda">Uganda</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="South  Sudan">South  Sudan</option>
+                <option value="DRC">DRC</option>
+            </select>
+                  <input placeholder= "State / District " type="text" name="state" size="15" maxlength="20" />
+                  <input placeholder= "Town" type="text" name="vtown" size="15" maxlength="20" />
+                  <input placeholder= "Zip Code" type="text" name="icode" size="15" maxlength="20" />
+        </fieldset>
+            <fieldset><legend><strong>Contacts and Address</strong></legend>
+                <input placeholder= "Phone Number 1 " type="text" name="phone1" size="15" maxlength="20" />
+                  <input placeholder= "Phone Number 2" type="text" name="phone2" size="15" maxlength="20" />
+                  <input placeholder= "email" type="email" name="email" size="15" maxlength="20" />
+
+            </fieldset>
+    </form>
+            <button type="submit" class="registerbtn">SUBMIT</button>
+
+     
+    </body>
+</html>
+{% endblock %}

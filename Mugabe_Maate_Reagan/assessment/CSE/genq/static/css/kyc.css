@@ -1,0 +1,110 @@
+html,body {
+    position: relative;
+    overflow-x: hidden;
+   
+    width: 100% !important;
+    height: 100vh;
+    display: table;
+    position: relative;
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+body{
+      background-color: whitesmoke;
+      font-family: 'raleway';
+ }
+    
+
+form {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+input{
+    width: auto;
+    background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+input[type=text], input[type=password] {
+    width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: orange;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor:auto;
+    width: 30%;
+    opacity: 2.0;
+    margin-right:0%; 
+  }
+  .registerbtn:hover {
+    opacity:1;
+  }
+
+
+/* Checkbox element, when checked */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px blue;
+}
+input[type="checkbox"]{
+    display: inline;
+    padding-left: 10px;
+    margin-right: 12px;
+    display:block;
+  }
+  .container{
+    display: inline;
+    padding-left: 10px;
+    margin-right: 12px;
+    display:block;
+  }
+/* Option elements, when selected */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+h1{
+  text-align: center;
+}
+p1{
+  text-align: center;
+}
